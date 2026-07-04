@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #312e81);
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+
+.kpi-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.kpi-card {
+  width: 200px;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(14px);
+  background: rgba(255,255,255,0.08);
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.kpi-card h3 {
+  margin-bottom: 10px;
+}
+
+.kpi-card p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card {
+  backdrop-filter: blur(14px);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+
+  padding: 30px;
+  width: 400px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(59,130,246,0.7);
+}
+
+.result {
+  padding: 20px;
+  width: 500px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.result h2 {
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.result p {
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.chart-section {
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+.chart-section img {
+  width: 700px;
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.customer-point-card {
+  margin-top: 20px;
+  padding: 20px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
