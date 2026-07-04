@@ -6,8 +6,8 @@ import numpy as np
 app = Flask(__name__)
 CORS(app)
 
-kmeans = joblib.load("../src/kmeans_model.pkl")
-scaler = joblib.load("../src/scaler.pkl")
+kmeans = joblib.load("kmeans_model.pkl")
+scaler = joblib.load("scaler.pkl")
 
 
 @app.route("/")
@@ -28,10 +28,8 @@ def predict():
 
     cluster = kmeans.predict(scaled_data)[0]
 
-    return jsonify({
-    "cluster": int(cluster)
-})
+    return jsonify({"cluster": int(cluster)})
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(host="0.0.0.0", port=5000)
