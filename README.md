@@ -1,8 +1,4 @@
-## Live Demo
 
-Frontend: https://your-vercel-url.vercel.app
-
-Backend API: https://mall-customer-backend.onrender.com
 # Mall Customer Segmentation Dashboard
 
 A machine learning based dashboard that segments mall customers into different groups based on Age, Annual Income, and Spending Score.
