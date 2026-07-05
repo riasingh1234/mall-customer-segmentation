@@ -48,17 +48,20 @@ function App() {
     try {
       const incomeInKUSD = Number(income) / 83 / 1000;
 
-      const response = await fetch("https://mall-customer-backend.onrender.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          age: Number(age),
-          income: incomeInKUSD,
-          spending: Number(spending),
-        }),
-      });
+      const response = await fetch(
+  `${import.meta.env.VITE_API_URL}/predict`,
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      age: Number(age),
+      income: incomeInKUSD,
+      spending: Number(spending),
+    }),
+  }
+);
 
       const data = await response.json();
 
